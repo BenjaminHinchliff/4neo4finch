@@ -1,14 +1,13 @@
 <script lang="ts">
+	import Link from '$lib/components/Link.svelte';
+
 	export let links: Record<string, string>;
 </script>
 
 <nav class="flex justify-center">
 	{#each Object.entries(links) as [name, href]}
-		<a
-			class="block text-2xl underline text-orange-500 m-2 hover:bg-orange-500/30 hover:no-underline p-1 rounded transition-all"
-			{href}
-		>
+		<Link class="block text-2xl m-2 p-1" {href}>
 			{name}
-		</a>
+		</Link>
 	{/each}
 </nav>
