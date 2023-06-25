@@ -4,14 +4,17 @@
 	let className: string | null | undefined = undefined;
 	export { className as class };
 	export let href: string;
+	export let disabled: boolean = false;
+
+	const styles = cn(className, 'underline text-orange-500 rounded transition-all');
 </script>
 
-<a
-	class={cn(
-		className,
-		'underline text-orange-500 hover:bg-orange-500/30 hover:no-underline rounded transition-all'
-	)}
-	{href}
->
-	<slot />
-</a>
+{#if disabled}
+	<button class={cn(styles, 'cursor-text text-orange-900 no-underline')} disabled>
+		<slot />
+	</button>
+{:else}
+	<a class={cn(styles, 'hover:bg-orange-500/30 hover:no-underline')} {href}>
+		<slot />
+	</a>
+{/if}
