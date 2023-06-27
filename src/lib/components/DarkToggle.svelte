@@ -19,7 +19,7 @@
 		} else {
 			document.documentElement.classList.remove('dark');
 		}
-		localStorage.setItem('dark', dark ? 'dark' : 'light');
+		localStorage.setItem('theme', dark ? 'dark' : 'light');
 	};
 </script>
 
