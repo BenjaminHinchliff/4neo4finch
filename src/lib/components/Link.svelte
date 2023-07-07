@@ -6,7 +6,7 @@
 	export let href: string;
 	export let disabled: boolean = false;
 
-	const styles = cn('underline text-orange-500 rounded transition-all', className);
+	const styles = cn(className, 'underline text-orange-500 rounded transition-all');
 </script>
 
 {#if disabled}
