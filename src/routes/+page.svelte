@@ -25,7 +25,7 @@
 </BodyP>
 <BodyP>
 	Outside of work, my hobbies include learning about philosophy and ways of thinking and viewing the
-	world, playing with my cats, hanging out with friends and/or my lovely girlfriend, and fixing and
+	world, playing with my cats, hanging out with friends, and fixing and
 	generally learning how things work.
 </BodyP>
 <BodyP>
